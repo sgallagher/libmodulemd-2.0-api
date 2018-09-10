@@ -3,6 +3,7 @@ WIP module design
 
 ## Classes
 * [Modulemd](Modulemd.md)
+* Modulemd.DocumentBase
 * Modulemd.Component
 * Modulemd.ComponentModule
 * Modulemd.ComponentRpm
