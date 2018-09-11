@@ -1,9 +1,16 @@
-# Modulemd.DocumentBase(GObject)
-Pure-virtual base class for document types that can be represented as YAML documents. Includes `modulemd`, `modulemd-defaults` and `modulemd-translations. Derived objects must implement all functions.
+# Modulemd.DocumentBase([Modulemd.YamlBase](Modulemd.YamlBase.md))
+Intermediate interface class for object types that can be represented as complete YAML documents.
+
+__Derived Classes__:
+* [Modulemd.ModuleStream](Modulemd.ModuleStream.md)
+* [Modulemd.Defaults](Modulemd.Defaults.md)
+* [Modulemd.Translations](Modulemd.Translations.md)
 
 ## Properties
 
-## Functions
+## Public Methods
+
+## Public Virtual Methods
 
 ---
 ### dump()
@@ -27,3 +34,5 @@ __error__: (out) (GError) A GError containing the reason the function failed, NU
 
 #### Returns:
 (string) A YAML representation of the index as a string. In the event of an error, sets `error` appropriately and returns NULL.
+
+## Private Virtual Methods
