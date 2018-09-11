@@ -1,4 +1,6 @@
 # Modulemd
+Utility functions not bound to any object. Used when parsing or emitting a complete data set.
+
 ## Properties
 ## Functions
 
