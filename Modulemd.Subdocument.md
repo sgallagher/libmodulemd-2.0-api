@@ -1,4 +1,5 @@
-# Modulemd.Subdocument
+# Modulemd.Subdocument (GObject)
+
 ## Properties
 __yaml__: (ro) (string) A string containing the YAML subdocument.
 
