@@ -3,7 +3,6 @@ WIP module design
 
 ## Classes
 * [Modulemd](Modulemd.md)
-* [Modulemd.DocumentBase](Modulemd.DocumentBase.md)
 * [Modulemd.Component](Modulemd.Component.md)
 * [Modulemd.ComponentModule](Modulemd.ComponentModule.md)
 * [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)
@@ -20,7 +19,6 @@ WIP module design
 * [Modulemd.Subdocument](Modulemd.Subdocument.md)
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
-* [Modulemd.YamlBase](Modulemd.YamlBase.md)
 
 ## Interfaces
 * [Modulemd.YamlDocumentIface](interfaces/Modulemd.YamlDocumentIface.md)
