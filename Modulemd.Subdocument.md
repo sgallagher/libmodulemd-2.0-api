@@ -23,7 +23,7 @@ __self__: (in) This [Modulemd.Subdocument](Modulemd.Subdocument.md)
 
 ---
 
-### get_gerror
+### get_gerror()
 #### Arguments:
 __self__: (in) This [Modulemd.Subdocument](Modulemd.Subdocument.md)
 
