@@ -20,7 +20,7 @@ __failures__: (out) (list<[Modulemd.Subdocument](Modulemd.Subdocument.md)>) An a
 __error__: (out) (GError) A GError containing additional information if this function completely fails.
 
 #### Returns:
-(dict<string,[Modulemd.Module](Modulemd.Module.md)>) A dictionary of all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream.
+([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
 
 ---
 ### index_from_string()
@@ -32,7 +32,7 @@ __failures__: (out) (list<[Modulemd.Subdocument](Modulemd.Subdocument.md)>) An a
 __error__: (out) (GError) A GError containing additional information if this function completely fails.
 
 #### Returns:
-(dict<string,[Modulemd.Module](Modulemd.Module.md)>) A dictionary of all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream.
+([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
 
 ---
 ### index_from_stream()
@@ -45,12 +45,12 @@ __failures__: (out) (list<[Modulemd.Subdocument](Modulemd.Subdocument.md)>) An a
 __error__: (out) (GError) A GError containing additional information if this function completely fails.
 
 #### Returns:
-(dict<string,[Modulemd.Module](Modulemd.Module.md)>) A dictionary of all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream.
+([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
 
 ---
 ### dump_index()
 #### Arguments:
-__index__: (in) (dict<string, [Modulemd.Module](Modulemd.Module.md)>) The index of [Modulemd.Module](Modulemd.Module.md) objects to dump to a YAML file.
+__index__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) The index of [Modulemd.Module](Modulemd.Module.md) objects to dump to a YAML file.
 
 __yaml_file__: (in) (string) The path to the file that should contain the resulting YAML.
 
@@ -62,7 +62,7 @@ __error__: (out) (GError) A GError containing the reason the function failed, NU
 ---
 ### dumps_index()
 #### Arguments:
-__index__: (in) (dict<string, [Modulemd.Module](Modulemd.Module.md)>) The index of [Modulemd.Module](Modulemd.Module.md) objects to dump to a YAML string.
+__index__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) The index of [Modulemd.Module](Modulemd.Module.md) objects to dump to a YAML string.
 
 __error__: (out) (GError) A GError containing the reason the function failed, NULL if the function succeeded.
 
