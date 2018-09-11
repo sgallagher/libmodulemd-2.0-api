@@ -29,10 +29,21 @@ __error__: (out) (GError) A GError containing the reason the function failed, NU
 #### Arguments:
 __self__: (in) This [Modulemd.DocumentBase](Modulemd.DocumentBase.md)
 
-
 __error__: (out) (GError) A GError containing the reason the function failed, NULL if the function succeeded.
 
 #### Returns:
 (string) A YAML representation of the index as a string. In the event of an error, sets `error` appropriately and returns NULL.
+
+---
+### validate()
+This method ensures that the object is internally consistent for usage. It will be run implicitly prior to emitting YAML.
+
+#### Arguments:
+__self__: (in) This [Modulemd.DocumentBase](Modulemd.DocumentBase.md)
+
+__error__: (out) (GError) A GError containing the reason the object failed validation, NULL if the validation passed.
+
+#### Returns:
+(bool) TRUE if validation passed.
 
 ## Private Virtual Methods
