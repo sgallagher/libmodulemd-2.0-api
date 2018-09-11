@@ -21,3 +21,6 @@ WIP module design
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
 * [Modulemd.YamlBase](Modulemd.YamlBase.md)
+
+## Interfaces
+* [Modulemd.YamlDocumentIface](interfaces/Modulemd.YamlDocumentIface.md)
