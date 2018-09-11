@@ -19,3 +19,4 @@ WIP module design
 * [Modulemd.Subdocument](Modulemd.Subdocument.md)
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
+* [Modulemd.YamlBase](Modulemd.YamlBase.md)
