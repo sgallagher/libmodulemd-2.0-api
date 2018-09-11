@@ -11,6 +11,7 @@ WIP module design
 * [Modulemd.Dependencies](Modulemd.Dependencies.md)
 * [Modulemd.Intent](Modulemd.Intent.md)
 * [Modulemd.Module](Modulemd.Module.md)
+* [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)
 * [Modulemd.ModuleStream](Modulemd.ModuleStream.md)
 * [Modulemd.Prioritizer](Modulemd.Prioritizer.md)
 * [Modulemd.Profile](Modulemd.Profile.md)
