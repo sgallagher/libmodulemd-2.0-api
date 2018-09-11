@@ -58,7 +58,7 @@ __error__: (out) (GError) A GError containing the reason the function failed, NU
 (bool) TRUE if the file was written successfully. In the event of an error, sets `error` appropriately and returns FALSE.
 
 ---
-### dump_index()
+### dumps_index()
 #### Arguments:
 __index__: (in) (dict<string, [Modulemd.Module](Modulemd.Module.md)>) The index of [Modulemd.Module](Modulemd.Module.md) objects to dump to a YAML string.
 
