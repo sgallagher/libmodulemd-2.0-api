@@ -25,3 +25,13 @@ WIP module design
 
 ## Private Interfaces
 * [Modulemd.YamlIface](interfaces/Modulemd.YamlIface.md)
+
+
+# Glossary
+## Shallow Copy
+For the purposes of this API, a "shallow copy" is defined as "A copy that takes a reference on any attribute of the source that it can and makes a full copy if it cannot."
+
+For example, if an object "ObjectA" has members that are a string and a pointer to Object B, it would make a full `strcpy()` of the string but take a reference to Object B instead.
+
+## Deep Copy
+For the purposes of this API, a "deep copy" is a recursive descent of the object, making deep copies of any child objects wihtin it.
