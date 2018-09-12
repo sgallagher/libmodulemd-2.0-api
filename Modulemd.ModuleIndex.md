@@ -1,6 +1,9 @@
 # Modulemd.ModuleIndex(GObject)
 A simplistic wrapper around GHashTable to ensure type-safety for [Modulemd.Module](Modulemd.Module.md) objects.
 
+Implements:
+* [Modulemd.YamlOutputIface](interfaces/Modulemd.YamlOutputIface.md)
+
 ## Properties
 
 ## Public Methods
