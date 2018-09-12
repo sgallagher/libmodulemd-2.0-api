@@ -6,10 +6,6 @@ Implements:
 
 ## Properties
 
----
-__buildtime_modules__: (ro) (GStrv) The list of modules required at build-time.
-
-__runtime_modules__: (ro) (GStrv) The list of modules required at run-time.
 
 ## Public Methods
 
@@ -17,7 +13,7 @@ __runtime_modules__: (ro) (GStrv) The list of modules required at run-time.
 ### new()
 #### Arguments:
 #### Returns:
-([Modulemd.Dependencies](Modulemd.Dependencies.md)) A newly-allocated [Modulemd.Dependencies](Modulemd.Dependencies.md) object.
+([Modulemd.Dependencies](Modulemd.Dependencies.md)) (transfer full) A newly-allocated [Modulemd.Dependencies](Modulemd.Dependencies.md) object.
 
 ---
 ### copy()
@@ -25,7 +21,7 @@ __runtime_modules__: (ro) (GStrv) The list of modules required at run-time.
 __self__: (in) This [Modulemd.Dependencies](Modulemd.Dependencies.md) object
 
 #### Returns:
-([Modulemd.Dependencies](Modulemd.Dependencies.md)) A newly-allocated shallow copy of `self`.
+([Modulemd.Dependencies](Modulemd.Dependencies.md)) (transfer full) A newly-allocated shallow copy of `self`.
 
 ---
 ### update()
@@ -54,22 +50,22 @@ __module_stream__: (in) (string) The name of the module stream to depend on.
 (void)
 
 ---
-### get_buildtime_modules()
+### get_buildtime_modules_as_strv()
 #### Arguments:
 __self__: (in) This [Modulemd.Dependencies](Modulemd.Dependencies.md) object.
 
 #### Returns:
-(GStrv) An ordered list of module names of build-time dependencies.
+(GStrv) (transfer full) An ordered list of module names of build-time dependencies.
 
 ---
-### get_buildtime_streams()
+### get_buildtime_streams_as_strv()
 #### Arguments:
 __self__: (in) This [Modulemd.Dependencies](Modulemd.Dependencies.md) object.
 
 __module__: (in) (string) The name of the module.
 
 #### Returns:
-(GStrv) An ordered list of module streams associated with the specified `module` that are required at build-time.
+(GStrv) (transfer full) An ordered list of module streams associated with the specified `module` that are required at build-time.
 
 ---
 ### add_runtime_stream()
@@ -86,7 +82,7 @@ __module_stream__: (in) (string) The name of the module stream to depend on.
 (void)
 
 ---
-### get_runtime_modules()
+### get_runtime_modules_as_strv()
 #### Arguments:
 __self__: (in) This [Modulemd.Dependencies](Modulemd.Dependencies.md) object.
 
@@ -94,18 +90,11 @@ __self__: (in) This [Modulemd.Dependencies](Modulemd.Dependencies.md) object.
 (GStrv) An ordered list of module names of run-time dependencies.
 
 ---
-### get_runtime_streams()
+### get_runtime_streams_as_strv()
 #### Arguments:
 __self__: (in) This [Modulemd.Dependencies](Modulemd.Dependencies.md) object.
 
 __module__: (in) (string) The name of the module.
 
 #### Returns:
-(GStrv) An ordered list of module streams associated with the specified `module` that are required at run-time.
-
-# Problems
-* With this approach, the get_*() routines will need to be `(transfer full)` because they will be constructed from internal opaque structures. This conflicts with the convention of get() being `(transfer none)`
-
-# Possible Alternatives
-* Change name from get_\*() to something else. fetch_\*() perhaps?
-* Consider replacing get_runtime_modules() and get_runtime_streams() with a Modulemd.DependenciesRuntimeIter approach. (Ditto buildtime)
+(GStrv) (transfer full) An ordered list of module streams associated with the specified `module` that are required at run-time.
