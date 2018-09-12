@@ -5,7 +5,7 @@ __yaml__: (ro) (string) A string containing the YAML subdocument.
 
 __gerror__: (ro) (GError) A GError containing an error code and message about why this subdocument failed parsing.
 
-## Functions
+## Public Methods
 
 ---
 ### new()
