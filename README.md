@@ -3,7 +3,7 @@ WIP module design
 
 ## Classes
 * [Modulemd](Modulemd.md)
-* [Modulemd.Component](Modulemd.Component.md)
+* [Modulemd.ComponentBase](Modulemd.ComponentBase.md)
 * [Modulemd.ComponentModule](Modulemd.ComponentModule.md)
 * [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)
 * [Modulemd.Defaults](Modulemd.Defaults.md)
