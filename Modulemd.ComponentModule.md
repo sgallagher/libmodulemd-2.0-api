@@ -17,7 +17,7 @@ __repository__: (rw) (string) The URI of the SCM repository.
 ---
 ### set_ref()
 #### Arguments:
-__self__: ([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
 
 __ref__: (in) (string) The commit ID in the SCM repository.
 
@@ -27,7 +27,7 @@ __ref__: (in) (string) The commit ID in the SCM repository.
 ---
 ### get_ref()
 #### Arguments:
-__self__: ([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
 
 #### Returns:
 (string) (transfer none) The commit ID in the SCM repository.
@@ -36,7 +36,7 @@ __self__: ([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) This [Modulemd.C
 ---
 ### set_repository()
 #### Arguments:
-__self__: ([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
 
 __repository__: (in) (string) The URI of the SCM repository.
 
@@ -46,7 +46,7 @@ __repository__: (in) (string) The URI of the SCM repository.
 ---
 ### get_repository()
 #### Arguments:
-__self__: ([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
 
 #### Returns:
 (string) (transfer none) The URI of the SCM repository.
