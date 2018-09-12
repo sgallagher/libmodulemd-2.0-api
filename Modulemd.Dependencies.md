@@ -1,11 +1,7 @@
 # Modulemd.Dependencies(GObject)
-
-## Interfaces:
-Implements:
-* [Modulemd.YamlIface](interfaces/Modulemd.YamlIface.md)
+Object to represent build-time and runtime dependencies of a module stream.
 
 ## Properties
-
 
 ## Public Methods
 
