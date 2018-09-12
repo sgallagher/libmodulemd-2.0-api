@@ -35,6 +35,16 @@ __error__: (out) (GError) A GError containing the reason the [Modulemd.Module](M
 #### Returns:
 (bool) TRUE if the [Modulemd.Module](Modulemd.Module.md) object was added successfully. If the module name already existed in the index, it will be replaced by this one. On failure, returns FALSE and sets `error` appropriately.
 
+---
+### remove_module()
+#### Arguments:
+__self__: (in) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object
+
+__module_name__: (in) (string) The module name to remove from the index.
+
+#### Returns:
+(bool) TRUE if the module was removed. FALSE if it was not present in the index.
+
 ## Public Virtual Methods
 
 ## Private Virtual Methods
