@@ -1,9 +1,6 @@
 # Modulemd.ModuleIndex(GObject)
 A simplistic wrapper around GHashTable to ensure type-safety for [Modulemd.Module](Modulemd.Module.md) objects.
 
-Implements:
-* [Modulemd.YamlOutputIface](interfaces/Modulemd.YamlOutputIface.md)
-
 ## Properties
 
 ## Public Methods
@@ -56,6 +53,40 @@ __error__: (out) (GError) A GError containing additional information if this fun
 
 #### Returns:
 (bool) Returns TRUE if the update was successful. Returns FALSE and sets `failures` and `error` appropriately if any of the YAML subdocuments were invalid or there was a parser error.
+
+---
+### dump_yaml_file()
+#### Arguments:
+__self__: (in) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object
+
+__yaml_file__: (in) (string) The path to the file that should contain the resulting YAML.
+
+__error__: (out) (GError) A GError containing the reason the function failed, NULL if the function succeeded.
+
+#### Returns:
+(bool) TRUE if the file was written successfully. In the event of an error, sets `error` appropriately and returns FALSE.
+
+---
+### dump_yaml_string()
+#### Arguments:
+__self__: (in) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object
+
+__error__: (out) (GError) A GError containing the reason the function failed, NULL if the function succeeded.
+
+#### Returns:
+(string) (transfer full) A YAML representation of the index as a string. In the event of an error, sets `error` appropriately and returns NULL.
+
+---
+### validate()
+This method ensures that all objects in the index are internally consistent for usage or dumping to YAML. It will be run implicitly prior to emitting YAML. This is *not* a complete linter, merely a sanity check that the values are not impossible.
+
+#### Arguments:
+__self__: (in) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object
+
+__error__: (out) (GError) A GError containing the reason the object failed validation, NULL if the validation passed.
+
+#### Returns:
+(bool) TRUE if validation passed.
 
 ---
 ### get_module_names_as_strv()
