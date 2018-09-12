@@ -20,7 +20,7 @@ __failures__: (out) (list<[Modulemd.Subdocument](Modulemd.Subdocument.md)>) An a
 __error__: (out) (GError) A GError containing additional information if this function completely fails.
 
 #### Returns:
-([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
+([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) (transfer full) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
 
 ---
 ### index_from_string()
@@ -32,7 +32,7 @@ __failures__: (out) (list<[Modulemd.Subdocument](Modulemd.Subdocument.md)>) An a
 __error__: (out) (GError) A GError containing additional information if this function completely fails.
 
 #### Returns:
-([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
+([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) (transfer full) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
 
 ---
 ### index_from_stream()
@@ -45,7 +45,7 @@ __failures__: (out) (list<[Modulemd.Subdocument](Modulemd.Subdocument.md)>) An a
 __error__: (out) (GError) A GError containing additional information if this function completely fails.
 
 #### Returns:
-([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
+([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) (transfer full) An object containing all [Modulemd.Module](Modulemd.Module.md) objects (including defaults and translations) included in this YAML stream, indexed by the module name.
 
 ---
 ### dump_index()
@@ -67,4 +67,4 @@ __index__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) The index of [
 __error__: (out) (GError) A GError containing the reason the function failed, NULL if the function succeeded.
 
 #### Returns:
-(string) A YAML representation of the index as a string. In the event of an error, sets `error` appropriately and returns NULL.
+(string) (transfer full) A YAML representation of the index as a string. In the event of an error, sets `error` appropriately and returns NULL.
