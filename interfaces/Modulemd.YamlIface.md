@@ -12,7 +12,7 @@ __parser__: (in) (yaml_parser_t) A YAML parser object that has been positioned a
 __error__: (out) (GError) A GError containing the reason the function failed, NULL if the function succeeded.
 
 #### Returns:
-([Modulemd.YamlBase](Modulemd.YamlBase.md)) Object constructed from YAML stream. In the event of a parsing or data error, sets `error` appropriately and returns NULL.
+([Modulemd.YamlBase](Modulemd.YamlBase.md)) (transfer full) Object constructed from YAML stream. In the event of a parsing or data error, sets `error` appropriately and returns NULL.
 
 ---
 ### emit_yaml()
