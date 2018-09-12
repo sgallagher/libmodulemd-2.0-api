@@ -23,7 +23,7 @@ __self__: (in) This [Modulemd.DocumentBase](Modulemd.DocumentBase.md)
 __error__: (out) (GError) A GError containing the reason the function failed, NULL if the function succeeded.
 
 #### Returns:
-(string) A YAML representation of the index as a string. In the event of an error, sets `error` appropriately and returns NULL.
+(string) (transfer full) A YAML representation of the index as a string. In the event of an error, sets `error` appropriately and returns NULL.
 
 ---
 ### validate()
