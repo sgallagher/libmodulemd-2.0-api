@@ -39,17 +39,3 @@ __error__: (out) (GError) A GError containing the reason the object failed valid
 
 #### Returns:
 (bool) TRUE if validation passed.
-
-## Pure Virutal Methods:
-
----
-### to_yaml()
-#### Arguments:
-__self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaults](Modulemd.Defaults.md) object.
-
-__yaml_emitter__: (in) (yaml_emitter_t) A YAML emitter object that has been initialized with STREAM_START and is not within a DOCUMENT_START/DOCUMENT_END block.
-
-__error__: (out) (GError) A GError containing information if the function fails or NULL if the function succeeds.
-
-#### Returns:
-(bool) TRUE if the YAML could be written successfully. Otherwise it sets `error` appropriately and returns FALSE.
