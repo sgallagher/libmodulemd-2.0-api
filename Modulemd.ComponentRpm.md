@@ -17,8 +17,8 @@ __repository__: (rw) (string) The URI of the SCM repository.
 ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) A newly-allocated [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md).
 
 ---
-### add_arch()
-Restrict the list of architectures on which this RPM will be available. It may be called any number of times. Use `reset_arches()` to return to "all architectures".
+### add_restricted_arch()
+Restrict the list of architectures on which this RPM will be available. It may be called any number of times to indicate support on additional architectures. Use `reset_arches()` to return to "all architectures".
 #### Arguments:
 __self__: (in) ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
 
@@ -47,7 +47,7 @@ __self__: (in) ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulem
 
 ---
 ### add_multilib_arch()
-Restrict the list of architectures on which this RPM will be available. It may be called any number of times. Use `reset_multilib_arches()` to return to "no architectures".
+Add an architectures on which this RPM will be multilib. It may be called any number of times. Use `reset_multilib_arches()` to return to "no architectures".
 #### Arguments:
 __self__: (in) ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
 
@@ -128,6 +128,3 @@ __self__: ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.Com
 
 #### Returns:
 (string) (transfer none) The URI of the SCM repository.
-
-## Open Questions
-* Should `reset_arches()` be called something more explicit? I'm not sure what a more descriptive name would be.
