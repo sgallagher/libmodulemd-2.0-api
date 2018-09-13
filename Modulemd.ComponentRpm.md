@@ -45,7 +45,34 @@ __self__: (in) ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulem
 #### Returns:
 (GStrv) (transfer full): A list of architectures on which this RPM should be available.
 
-# TODO: multilib
+---
+### add_multilib_arch()
+Restrict the list of architectures on which this RPM will be available. It may be called any number of times. Use `reset_multilib_arches()` to return to "no architectures".
+#### Arguments:
+__self__: (in) ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
+
+__arch__: (in) (string) An architecture on which this package should be multilib.
+
+#### Returns:
+(void)
+
+---
+### reset_multilib_arches()
+Indicate that this RPM component is multilib on no architectures.
+
+#### Arguments:
+__self__: (in) ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
+
+#### Returns:
+(void)
+
+---
+### get_multilib_arches_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) This [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md) object.
+
+#### Returns:
+(GStrv) (transfer full): A list of architectures on which multilib should be available.
 
 ---
 ### set_cache()
