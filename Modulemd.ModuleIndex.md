@@ -128,10 +128,27 @@ __module_name__: (in) (string) The module name to remove from the index.
 #### Returns:
 (bool) TRUE if the module was removed. FALSE if it was not present in the index.
 
-## Public Virtual Methods
+---
+### add_defaults()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object.
 
-## Private Virtual Methods
+__defaults_: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) A [Modulemd.Defaults](Modulemd.Defaults.md) object to associate with this ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)).
 
+#### Returns:
+(void)
+
+---
+### get_defaults()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object.
+
+__module_name__: (in) (string) The name of the module whose defaults should be returned.
+
+__intent__: (in) (string) (nullable) Get the defaults for a particular intent. If this intent does not exist, this function will return the general defaults instead.
+
+#### Returns:
+([Modulemd.Defaults](Modulemd.Defaults.md)) (transfer none) The defaults of this module associated with this intent, the general defaults if the intent does not exist or NULL if neither exists.
 
 ## Future enhancements
 * Implement GInitable and add `new_from_file()` and friends.
