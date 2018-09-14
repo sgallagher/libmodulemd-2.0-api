@@ -19,7 +19,7 @@ Merge in the contents of a [Modulemd.ModuleIndex])(Modulemd.ModuleIndex.md) at t
 #### Arguments:
 __self__: (in) ([Modulemd.Prioritizer](Modulemd.Prioritizer.md)) This [Modulemd.Prioritizer](Modulemd.Prioritizer.md) object.
 
-__index__: (in) ([Modulemd.ModuleIndex])(Modulemd.ModuleIndex.md)) The index of module objects from a repository whose contents will be merged depending on priority.
+__index__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) The index of module objects from a repository whose contents will be merged depending on priority.
 
 __priority__: (in) (int64) The priority of the repository this index was loaded from. Items at the same priority level will attempt to merge on conflict. Items at higher priority levels will replace on conflict. Valid values are 0 - 1000.
 
@@ -30,7 +30,7 @@ __error__: (out) (GError) If a failure to merge at this priority level occurs, `
 
 ---
 ### resolve()
-Merges all added [Modulemd.ModuleIndex])(Modulemd.ModuleIndex.md) objects according to their priority.
+Merges all added [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) objects according to their priority.
 
 #### Arguments:
 __self__: (in) ([Modulemd.Prioritizer](Modulemd.Prioritizer.md)) This [Modulemd.Prioritizer](Modulemd.Prioritizer.md) object.
@@ -39,4 +39,4 @@ __self__: (in) ([Modulemd.Prioritizer](Modulemd.Prioritizer.md)) This [Modulemd.
 __error__: (out) (GError) If a merge failure occurs, `error` will contain information about why.
 
 #### Returns:
-([Modulemd.ModuleIndex])(Modulemd.ModuleIndex.md)) (transfer full) A newly-allocated [Modulemd.ModuleIndex])(Modulemd.ModuleIndex.md) object containing all the merged values of those that have been added to this object. If the merge could not be resolved, this function returns NULL and will set `error` appropriately.
+([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) (transfer full) A newly-allocated [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object containing all the merged values of those that have been added to this object. If the merge could not be resolved, this function returns NULL and will set `error` appropriately.
