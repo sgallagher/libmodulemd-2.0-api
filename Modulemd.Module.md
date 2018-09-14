@@ -58,7 +58,7 @@ __stream_name__: (in) (string) The name of the stream to retrieve.
 #### Arguments:
 __self__: (in) ([Modulemd.Module](Modulemd.Module.md)) This [Modulemd.Module](Modulemd.Module.md) object.
 
-__defaults_: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) A [Modulemd.Defaults](Modulemd.Defaults.md) object to associate with this ([Modulemd.Module](Modulemd.module.md). If the module_name in the [Modulemd.Defaults](Modulemd.Defaults.md) object does not match this module, it will be silently ignored.
+__defaults_: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) A [Modulemd.Defaults](Modulemd.Defaults.md) object to associate with this ([Modulemd.Module](Modulemd.Module.md). If the module_name in the [Modulemd.Defaults](Modulemd.Defaults.md) object does not match this module, it will be silently ignored.
 
 #### Returns:
 (void)
