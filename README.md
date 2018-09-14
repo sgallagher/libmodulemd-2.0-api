@@ -20,12 +20,6 @@ WIP module design
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
 
-## Public Interfaces
-* [Modulemd.YamlDocumentIface](interfaces/Modulemd.YamlDocumentIface.md)
-
-## Private Interfaces
-* [Modulemd.YamlIface](interfaces/Modulemd.YamlIface.md)
-
 
 # Glossary
 ## Shallow Copy
