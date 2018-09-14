@@ -2,7 +2,6 @@
 WIP module design
 
 ## Classes
-* [Modulemd](Modulemd.md)
 * [Modulemd.ComponentBase](Modulemd.ComponentBase.md)
 * [Modulemd.ComponentModule](Modulemd.ComponentModule.md)
 * [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)
@@ -10,14 +9,14 @@ WIP module design
 * [Modulemd.Dependencies](Modulemd.Dependencies.md)
 * [Modulemd.Module](Modulemd.Module.md)
 * [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)
-* [Modulemd.ModuleStream](Modulemd.ModuleStream.md)
-* [Modulemd.Prioritizer](Modulemd.Prioritizer.md)
-* [Modulemd.Profile](Modulemd.Profile.md)
+* [Modulemd.ModuleStream](Modulemd.ModuleStream.md) TODO
+* [Modulemd.Prioritizer](Modulemd.Prioritizer.md) TODO
+* [Modulemd.Profile](Modulemd.Profile.md) TODO
 * [Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)
 * [Modulemd.Subdocument](Modulemd.Subdocument.md)
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
-
+* [Modulemd](Modulemd.md)
 
 # Glossary
 ## Shallow Copy
