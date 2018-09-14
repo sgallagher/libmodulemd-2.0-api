@@ -3,7 +3,7 @@ Defaults for modules
 
 ## Properties
 
-__version__: (ro) (uint64) The metadata version of this Defaults object. Defaults to the highest-supported version if not specified at object construction. Cannot be changed after object construction.
+__version__: (ro) (uint64) The metadata version of this Defaults object. Defaults to the highest-supported version if not specified at object construction. Cannot be changed after object construction except through the upgrade() routine.
 
 __module_name__: (ro) (string) The name of the module to which these defaults apply.
 
@@ -32,6 +32,21 @@ __self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaul
 
 #### Returns:
 ([Modulemd.Defaults](Modulemd.Defaults.md)) (transfer full) A shallow copy of this [Modulemd.Defaults](Modulemd.Defaults.md) object.
+
+---
+### upgrade()
+Upgrade this version of the defaults metadata to a newer version.
+
+#### Arguments:
+__self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaults](Modulemd.Defaults.md) object.
+
+__target_version__: (in) (uint64) The version to upgrade to. Must be higher than the current version.
+
+__error__: (out) (GError) A GError containing the reason the object failed to upgrade, NULL if the upgrade succeeded.
+
+
+#### Returns:
+(bool) TRUE if the upgrade succeeded. If the upgrade could not complete, returns FALSE and sets `error` appropriately.
 
 ---
 ### validate()
