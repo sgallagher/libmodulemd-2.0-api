@@ -2,7 +2,7 @@
 WIP module design
 
 ## Classes
-* [Modulemd.Buildopts](Modulemd.Buildopts.md) TODO
+* [Modulemd.Buildopts](Modulemd.Buildopts.md)
 * [Modulemd.ComponentBase](Modulemd.ComponentBase.md)
 * [Modulemd.ComponentModule](Modulemd.ComponentModule.md)
 * [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)
