@@ -210,6 +210,15 @@ __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Mod
 #### Returns:
 (string) Link to upstream documentation of this module stream.
 
+### remove_module_component()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__component_name__: (in) (string) The name of the module component to remove.
+
+#### Returns:
+(void)
+
 ---
 ### get_module_component_names_as_strv()
 #### Arguments:
@@ -227,5 +236,163 @@ __component_name__: (in) (string) The name of the module component to retrieve.
 
 #### Returns:
 ([Modulemd.ComponentModule](Modulemd.ComponentModule.md)) (transfer none) A component module matching the supplied name or NULL if it was not found in this module stream.
+
+---
+### add_module_license()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__license__: (in) (string) A license under which this module stream is released.
+
+#### Returns:
+(void)
+
+---
+### remove_module_license()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__license__: (in) (string) A license to remove from the list. Has no effect if the license is not present.
+
+#### Returns:
+(void)
+
+---
+### get_module_licenses_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(strv) (transfer full) An ordered list of licenses under which this module stream is released.
+
+---
+### get_module_name()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(string) (transfer none) The name of the module to which this stream belongs.
+
+---
+### add_profile()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__profile__: (in) ([Modulemd.Profile](Modulemd.Profile.md)) A profile definition to add to this module.
+
+#### Returns:
+(void)
+
+---
+### clear_profiles()
+Remove all profiles from this module.
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(void)
+
+---
+### get_profile_names_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(strv) (transfer full) An ordered list of profile names associated with this module stream.
+
+---
+### get_profile()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__profile_name__: (in) (string) The name of the profile to retrieve.
+
+#### Returns:
+([Modulemd.Profile](Modulemd.Profile.md)) (transfer none) The requested profile definition or NULL if not found.
+
+
+---
+### add_rpm_api()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__api__: (in) (string) The name of a binary RPM present in this module that is considered stable public API.
+
+#### Returns:
+(void)
+
+---
+### remove_rpm_api()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__api__: (in) (string) A binary RPM name to remove from the list of stable public API.
+
+#### Returns:
+(void)
+
+---
+### get_rpm_api_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(strv) (transfer full) An ordered list of binary RPM names that forms the public API of this module stream.
+
+---
+### add_rpm_artifact()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__artifact__: (in) (string) The name of a binary RPM present in this module stream.
+
+#### Returns:
+(void)
+
+---
+### remove_rpm_artifact()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__artifact__: (in) (string) A binary RPM name to remove from the list of artifacts.
+
+#### Returns:
+(void)
+
+---
+### get_rpm_artifacts_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(strv) (transfer full) An ordered list of binary RPM names that are included in this module stream.
+
+---
+### remove_rpm_component()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__component_name__: (in) (string) The name of the RPM component to remove.
+
+#### Returns:
+(void)
+
+---
+### get_rpm_component_names_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(strv) (transfer full) An ordered list of RPM component names included in this stream.
+
+---
+### get_rpm_component()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__component_name__: (in) (string) The name of the RPM component to retrieve.
+
+#### Returns:
+([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) (transfer none) An RPM module matching the supplied name or NULL if it was not found in this module stream.
 
 # TODO
