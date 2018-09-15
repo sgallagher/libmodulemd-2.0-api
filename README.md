@@ -37,6 +37,10 @@ These classes are not public API. Do not use them. The are internal implementati
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
 
+# General themes
+* Any routine of the form `get_<property>()` will return a const pointer to the internal representation of this property.
+* Any routine of the form `get_<property>_as_<type>()` will return a newly-allocated representation of the data in the specified format.
+
 # Glossary
 ## Shallow Copy
 For the purposes of this API, a "shallow copy" is defined as "A copy that takes a reference on any attribute of the source that it can and makes a full copy if it cannot."
