@@ -14,6 +14,8 @@ __self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaul
 
 ---
 ### upgrade()
+Return an upgraded copy of this object. Does not modify the original.
+
 #### Arguments:
 __self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaults](Modulemd.Defaults.md) object
 
@@ -22,4 +24,4 @@ __version__: (in) (uint64) (nullable) The version to upgrade to. If unspecified 
 __error__: (out) (GError) If this function fails, this argument will contain the reason why.
 
 #### Returns:
-(bool) TRUE if the upgrade completed successfully. FALSE and sets `error` appropriately if the upgrade could not be completed automatically.
+([Modulemd.Defaults](Modulemd.Defaults.md)) (transfer full) Returns a newly-allocated [Modulemd.Defaults](Modulemd.Defaults.md) copy of this object upgraded to the requested version. Returns NULL and sets `error` appropriately if the upgrade could not be completed automatically.
