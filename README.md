@@ -1,7 +1,7 @@
 # libmodulemd-2.0-api
 WIP module design
 
-## Classes
+## Public Classes
 * [Modulemd.Buildopts](Modulemd.Buildopts.md)
 * [Modulemd.ComponentBase](Modulemd.ComponentBase.md)
 * [Modulemd.ComponentModule](Modulemd.ComponentModule.md)
@@ -16,9 +16,12 @@ WIP module design
 * [Modulemd.Profile](Modulemd.Profile.md)
 * [Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)
 * [Modulemd.Subdocument](Modulemd.Subdocument.md)
+* [Modulemd](Modulemd.md)
+
+## Private Classes
+These classes are not public API. Do not use them. The are internal implementation details.
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
-* [Modulemd](Modulemd.md)
 
 # Glossary
 ## Shallow Copy
