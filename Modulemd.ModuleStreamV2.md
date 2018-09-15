@@ -274,6 +274,14 @@ __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Mod
 (string) (transfer none) The name of the module to which this stream belongs.
 
 ---
+### get_nsvc_as_string()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(string) (transfer full) 
+
+---
 ### add_profile()
 #### Arguments:
 __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
@@ -395,4 +403,150 @@ __component_name__: (in) (string) The name of the RPM component to retrieve.
 #### Returns:
 ([Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)) (transfer none) An RPM module matching the supplied name or NULL if it was not found in this module stream.
 
-# TODO
+
+---
+### add_rpm_filter()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__rpm_name__: (in) (string) The name of a binary RPM to filter out of this module stream.
+
+#### Returns:
+(void)
+
+---
+### remove_rpm_filter()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__rpm_name__: (in) (string) A binary RPM name to remove from the filter list.
+
+#### Returns:
+(void)
+
+---
+### get_rpm_filters_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(strv) (transfer full) An ordered list of binary RPM names that are filtered out of this module stream.
+
+---
+### add_servicelevel()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__servicelevel__: (in) ([Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)) A service level to assign to this stream. If the name of this stream already exists, it will be replaced by this one.
+
+#### Returns:
+(void)
+
+---
+### remove_servicelevel()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__servicelevel_name__: (in) (string) The name of the service level to remove. If this name is not present, this function does nothing.
+
+#### Returns:
+(void)
+
+---
+### get_servicelevel_names_as_strv()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(strv) (transfer full) The ordered list of service level names associated with this module stream.
+
+---
+### get_servicelevel()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__servicelevel_name__: (in) (string) The name of the servicelevel to retrieve.
+
+#### Returns:
+([Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)) (transfer none) The requested service level if it is present. NULL if unknown.
+
+---
+### get_stream()
+#### Arguments:
+#### Returns:
+(string) (transfer none) The name of this module stream.
+
+---
+### set_summary()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__description__: (in) (string) The untranslated summary of this module stream.
+
+#### Returns:
+(void)
+
+---
+### get_summary()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__locale__: (in) (string) (nullable) The locale specifying the translation to return. If unspecified, it defaults to C.UTF-8
+
+#### Returns:
+(string) (transfer none) The summary of this module stream translated into the language specified by the locale if it is available, otherwise it returns the C.UTF-8 original.
+
+---
+### set_tracker()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__tracker__: (in) (string) Link to the upstream bug tracker.
+
+#### Returns:
+(void)
+
+---
+### get_tracker()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(string) (transfer none) Link to the upstream bug tracker.
+
+---
+### set_version()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__version__: (in) (uint64) The version of this module stream.
+
+#### Returns:
+(void)
+
+---
+### get_version()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(uint64) The version of this module stream
+
+---
+### set_xmd()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+__xmd__: (in) (GHashTable<string, GVariant>) An extensible metadata block consisting of arbitrary YAML data.
+
+#### Returns:
+(void)
+
+
+---
+### get_xmd_as_hash_table()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
+
+#### Returns:
+(GHashTable<string, GVariant>) (transfer container) The extensible metadata block represented as a hash table of <string, GVariant>
