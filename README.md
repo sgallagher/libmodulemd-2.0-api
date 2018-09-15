@@ -7,7 +7,7 @@ WIP module design
 * [Modulemd.ComponentModule](Modulemd.ComponentModule.md)
 * [Modulemd.ComponentRpm](Modulemd.ComponentRpm.md)
 * [Modulemd.Defaults](Modulemd.Defaults.md)
-* [Modulemd.DefaultsV1](Modulemd.Defaults.md)
+* [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)
 * [Modulemd.Dependencies](Modulemd.Dependencies.md)
 * [Modulemd.Module](Modulemd.Module.md)
 * [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)
