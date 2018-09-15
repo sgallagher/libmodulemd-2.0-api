@@ -12,6 +12,7 @@ WIP module design
 * [Modulemd.Module](Modulemd.Module.md)
 * [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)
 * [Modulemd.ModuleStream](Modulemd.ModuleStream.md) TODO
+* [Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md) TODO
 * [Modulemd.Prioritizer](Modulemd.Prioritizer.md)
 * [Modulemd.Profile](Modulemd.Profile.md)
 * [Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)
