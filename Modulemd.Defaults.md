@@ -25,3 +25,13 @@ __error__: (out) (GError) If this function fails, this argument will contain the
 
 #### Returns:
 ([Modulemd.Defaults](Modulemd.Defaults.md)) (transfer full) Returns a newly-allocated [Modulemd.Defaults](Modulemd.Defaults.md) copy of this object upgraded to the requested version. Returns NULL and sets `error` appropriately if the upgrade could not be completed automatically.
+
+---
+### validate()
+#### Arguments:
+__self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaults](Modulemd.Defaults.md) object.
+
+__error__: (out) (GError) A GError containing the reason the object failed validation, NULL if the validation passed.
+
+#### Returns:
+(bool) TRUE if validation passed.
