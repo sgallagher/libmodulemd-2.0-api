@@ -1,5 +1,17 @@
 # libmodulemd-2.0-api
-WIP module design
+
+## Quick Usage
+```
+from gi.repository import Modulemd
+
+module_idx = Modulemd.ModuleIndex()
+module_idx.update_from_file("mmd_from_repository.yaml")
+
+testmodule = module_idx.get_module("testmodule")
+testmodulestream = testmodule.get_stream("stable")
+
+dependencies = testmodulestream.get_dependencies_as_list()
+```
 
 ## Public Classes
 * [Modulemd.Buildopts](Modulemd.Buildopts.md)
