@@ -26,14 +26,6 @@ __module_name__: (in) (string) The name of the module to which these defaults ap
 ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) (transfer full) A newly-allocated Modulemd.DefaultsV1 object.
 
 ---
-### copy()
-#### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
-#### Returns:
-([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) (transfer full) A shallow copy of this [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
----
 ### upgrade()
 Upgrade this version of the defaults metadata to a newer version.
 
