@@ -150,5 +150,21 @@ __intent__: (in) (string) (nullable) Get the defaults for a particular intent. I
 #### Returns:
 ([Modulemd.Defaults](Modulemd.Defaults.md)) (transfer none) The defaults of this module associated with this intent, the general defaults if the intent does not exist or NULL if neither exists.
 
+---
+### upgrade()
+#### Arguments
+__self__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object.
+
+__stream_version__: (in) (uint64) (nullable) Upgrade all [Modulemd.ModuleStream](Modulemd.ModuleStream.md) objects in this index to the specified version. If the version is unspecified (0 in the C API), it will be upgraded to the highest-supported version available.
+
+__defaults_version__: (in) (uint64) (nullable) Upgrade all [Modulemd.Defaults](Modulemd.Defaults.md) objects in this index to the specified version. If the version is unspecified (0 in the C API), it will be upgraded to the highest-supported version available.
+
+__translations_version__: (in) (uint64) (nullable) Upgrade all [Modulemd.Translations](Modulemd.ModuleStream.md) objects in this index to the specified version. If the version is unspecified (0 in the C API), it will be upgraded to the highest-supported version available.
+
+__error__: (out) (GError) If this function fails, reason why the upgrade could not be completed will be returned here.
+
+#### Returns:
+(bool) TRUE if all objects could be upgraded properly. FALSE if one or more failed. If FALSE is returned, the internal state of this [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) is undefined and it should be freed. In that situation, `error` will be set with more information about why it failed.
+
 ## Future enhancements
 * Implement GInitable and add `new_from_file()` and friends.
