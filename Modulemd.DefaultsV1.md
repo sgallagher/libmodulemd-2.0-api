@@ -49,16 +49,6 @@ __error__: (out) (GError) A GError containing the reason the object failed to up
 (bool) TRUE if the upgrade succeeded. If the upgrade could not complete, returns FALSE and sets `error` appropriately.
 
 ---
-### validate()
-#### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
-__error__: (out) (GError) A GError containing the reason the object failed validation, NULL if the validation passed.
-
-#### Returns:
-(bool) TRUE if validation passed.
-
----
 ### get_version()
 Gets the numeric version associated with this object. This will never be modified after object construction.
 
