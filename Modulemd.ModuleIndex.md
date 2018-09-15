@@ -159,8 +159,6 @@ __stream_version__: (in) (uint64) (nullable) Upgrade all [Modulemd.ModuleStream]
 
 __defaults_version__: (in) (uint64) (nullable) Upgrade all [Modulemd.Defaults](Modulemd.Defaults.md) objects in this index to the specified version. If the version is unspecified (0 in the C API), it will be upgraded to the highest-supported version available.
 
-__translations_version__: (in) (uint64) (nullable) Upgrade all [Modulemd.Translations](Modulemd.ModuleStream.md) objects in this index to the specified version. If the version is unspecified (0 in the C API), it will be upgraded to the highest-supported version available.
-
 __error__: (out) (GError) If this function fails, reason why the upgrade could not be completed will be returned here.
 
 #### Returns:
