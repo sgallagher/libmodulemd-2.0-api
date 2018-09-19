@@ -1,5 +1,5 @@
 # Modulemd.Translation (GObject)
-Translation information for a module stream
+Translation information for a module stream.
 
 ## Properties
 __version__: (ro) (uint64) The metadata version of this [Modulemd.Translation](Modulemd.Translation.md). Must be set at object construction time and remains immutable thereafter.
@@ -33,6 +33,39 @@ __self__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) This [Modulemd.
 
 #### Returns:
 ([Modulemd.Translation](Modulemd.Translation.md)) (transfer full) A shallow copy of this [Modulemd.Translation](Modulemd.Translation.md) object.
+
+---
+### validate()
+his method ensures that the translation is internally consistent for usage or dumping to YAML. It will be run implicitly prior to emitting YAML. This is not a complete linter, merely a sanity check that the values are not impossible.
+#### Arguments:
+__self__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) This [Modulemd.Translation](Modulemd.Translation.md) object.
+
+__error__: (out) (GError) If the object is not valid, it will return the reason.
+
+#### Returns:
+(bool) TRUE if validation passed.
+
+---
+### dump()
+#### Arguments:
+__self__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) This [Modulemd.Translation](Modulemd.Translation.md) object.
+
+__yaml_file__: (in) (string) Path to the output file to contain a YAML representation of this object.
+
+__error__: (out) (GError) If the YAML could not be written to disk, contains the reason.
+
+#### Returns:
+(bool) Whether the YAML was written successfully.
+
+---
+### dumps()
+#### Arguments:
+__self__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) This [Modulemd.Translation](Modulemd.Translation.md) object.
+
+__error__: (out) (GError) If the YAML could not be written to disk, contains the reason.
+
+#### Returns:
+(string) (transfer_full) A YAML string representing this object.
 
 ---
 ### set_modified()
