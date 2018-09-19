@@ -36,22 +36,36 @@ __error__: (out) (GError) A GError containing the reason the object failed valid
 (bool) TRUE if validation passed.
 
 ---
-### get_stream_names_as_strv()
+### get_all_streams_as_list()
 #### Arguments:
 __self__: (in) ([Modulemd.Module](Modulemd.Module.md)) This [Modulemd.Module](Modulemd.Module.md) object.
 
-#### Returns:
-(strv) (transfer full) An ordered list of unique stream names associated with this module.
+####
+(GPtrArray<[Modulemd.ModuleStream](Modulemd.ModuleStream.md)>) (transfer container) A list of all available stream objects associated with this module. There may be multiple streams with the same name and different version and context. The order of items in this list is not guaranteed.
 
 ---
-### get_stream()
+### get_streams_by_stream_name_as_list()
 #### Arguments:
 __self__: (in) ([Modulemd.Module](Modulemd.Module.md)) This [Modulemd.Module](Modulemd.Module.md) object.
 
-__stream_name__: (in) (string) The name of the stream to retrieve.
+__stream__: (in) (string) The name of the stream to retrieve.
 
 #### Returns:
-([Modulemd.ModuleStream](Modulemd.ModuleStream.md)) (transfer none) The stream of the specified name, or NULL if the stream is not present in the index.
+(GPtrArray<[Modulemd.ModuleStream](Modulemd.ModuleStream.md)>) (transfer container) A list of all available stream objects associated with a particular stream name, sorted highest to lowest by the version. The same version may have more than one associated context.
+
+---
+### get_stream_by_NSVC()
+#### Arguments:
+__self__: (in) ([Modulemd.Module](Modulemd.Module.md)) This [Modulemd.Module](Modulemd.Module.md) object.
+
+__stream__: (in) (string) The name of the stream to retrieve.
+
+__version__: (in) (uint64) The version of the string to return.
+
+__context__: (in) (string) The module context to identify the right stream.
+
+#### Returns:
+([Modulemd.ModuleStream](Modulemd.ModuleStream.md)) (transfer none) The requested stream object or NULL if no match was found.
 
 ---
 ### add_defaults()
