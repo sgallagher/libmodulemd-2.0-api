@@ -30,12 +30,10 @@ dependencies = testmodulestream.get_dependencies_as_list()
 * [Modulemd.Profile](Modulemd.Profile.md)
 * [Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)
 * [Modulemd.Subdocument](Modulemd.Subdocument.md)
-* [Modulemd](Modulemd.md)
-
-## Private Classes
-These classes are not public API. Do not use them. The are internal implementation details.
 * [Modulemd.Translation](Modulemd.Translation.md)
 * [Modulemd.TranslationEntry](Modulemd.TranslationEntry.md)
+* [Modulemd](Modulemd.md)
+
 
 # General themes
 * Any routine of the form `get_<property>()` will return a const pointer to the internal representation of this property.
