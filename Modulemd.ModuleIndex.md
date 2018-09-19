@@ -151,6 +151,22 @@ __intent__: (in) (string) (nullable) Get the defaults for a particular intent. I
 ([Modulemd.Defaults](Modulemd.Defaults.md)) (transfer none) The defaults of this module associated with this intent, the general defaults if the intent does not exist or NULL if neither exists.
 
 ---
+### add_translation()
+Adds a [Modulemd.Translation](Modulemd.Translation.md) to all of the appropriate module streams within this index. It will be checked for validity as part of this action and may return an error. It will also fail if the module and stream are not present in the index.
+
+Note: once a [Modulemd.Translation](Modulemd.Translation.md) is added, it cannot be removed. It can be replaced with a subsequent call to this function with an object of the same module name and stream.
+
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object.
+
+__translation__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) A translation object to add to the Index.
+
+__error__: (out) (GError) If the validation failed, this will contain the reason.
+
+#### Returns:
+(bool) TRUE if the translation could be added. FALSE if it failed validation or the module stream it references does not appear in the index.
+
+---
 ### upgrade()
 #### Arguments
 __self__: (in) ([Modulemd.ModuleIndex](Modulemd.ModuleIndex.md)) This [Modulemd.ModuleIndex](Modulemd.ModuleIndex.md) object.
