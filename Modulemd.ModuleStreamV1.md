@@ -23,8 +23,6 @@ __summary__: (rw) (string) The untranslated summary of this module.
 
 __tracker__: (rw) (string) Link to the upstream bug tracker for this module.
 
-__version__: (rw) (uint64) The version of this module.
-
 ## Public Methods
 
 ---
@@ -604,12 +602,22 @@ __version__: (in) (uint64) The version of this module stream.
 (void)
 
 ---
-### get_version()
+### unset_version()
+Remove the stream version from this module
 #### Arguments:
 __self__: (in) ([Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md)) This [Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md) object.
 
 #### Returns:
-(uint64) The version of this module stream
+(void)
+
+---
+### get_version()
+#### Arguments:
+__self__: (in) ([Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md)) This [Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md) object.
+__version__: (out) (uint64) The version of this module stream
+
+#### Returns:
+(bool) Whether a version was set for this stream.
 
 ---
 ### set_xmd()
