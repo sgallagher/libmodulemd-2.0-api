@@ -36,7 +36,7 @@ dependencies = testmodulestream.get_dependencies_as_list()
 
 
 # General themes
-* Any routine of the form `get_<property>()` will return a const pointer to the internal representation of this property.
+* Any routine of the form `get_<property>()` will return a const pointer to the internal representation of this property if it's a standard type or a non-const object/GLib pointer.
 * Any routine of the form `get_<property>_as_<type>()` will return a newly-allocated representation of the data in the specified format.
 
 # Glossary
