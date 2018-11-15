@@ -3,7 +3,7 @@ A parent class for all versions of Defaults objects.
 
 ## Properties
 
-__version__: (ro) (uint64) The metadata version of this Defaults object. Defaults to the highest-supported version if not specified at object construction. Cannot be changed after object construction except through the upgrade() routine.
+__mdversion__: (ro) (uint64) The metadata version of this Defaults object. Defaults to the highest-supported version if not specified at object construction. Cannot be changed after object construction except through the upgrade() routine.
 
 __module_name__: (ro) (string) The name of the module to which these defaults apply. Cannot be changed after object construction
 
