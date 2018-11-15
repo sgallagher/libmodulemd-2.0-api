@@ -50,3 +50,13 @@ __error__: (out) (GError) A GError containing the reason the object failed valid
 
 #### Returns:
 (bool) TRUE if validation passed.
+
+---
+### get_mdversion()
+Gets the numeric metadata version of this object. This will never be modified after object construction.
+
+#### Arguments:
+__self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaults](Modulemd.Defaults.md) object.
+
+#### Returns:
+(uint64) The metadata version represented by this [Modulemd.Defaults](Modulemd.Defaults.md) object.
