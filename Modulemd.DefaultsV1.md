@@ -3,10 +3,6 @@ Defaults for modules
 
 ## Properties
 
-__version__: (ro) (uint64) The metadata version of this Defaults object. Defaults to the highest-supported version if not specified at object construction. Cannot be changed after object construction except through the upgrade() routine.
-
-__module_name__: (ro) (string) The name of the module to which these defaults apply.
-
 __default_stream__: (rw) (string) (nullable) The default stream for the module
 
 __intent__: (rw) (nullable) The system intent these defaults apply to. If unspecified, these are general defaults.
@@ -18,8 +14,6 @@ __intent__: (rw) (nullable) The system intent these defaults apply to. If unspec
 ### new()
 
 #### Arguments:
-__version__: (in) (uint64) The version of the Defaults metadata.
-
 __module_name__: (in) (string) The name of the module to which these defaults apply.
 
 #### Returns:
