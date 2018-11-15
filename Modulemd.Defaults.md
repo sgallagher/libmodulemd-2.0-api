@@ -60,3 +60,13 @@ __self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaul
 
 #### Returns:
 (uint64) The metadata version represented by this [Modulemd.Defaults](Modulemd.Defaults.md) object.
+
+---
+### get_module_name()
+Gets the name of the module to which these defaults apply. This will never be modified after object construction.
+
+#### Arguments:
+__self__: (in) ([Modulemd.Defaults](Modulemd.Defaults.md)) This [Modulemd.Defaults](Modulemd.Defaults.md) object.
+
+#### Returns:
+(string) (transfer none) The name of the module to which these defaults apply.
