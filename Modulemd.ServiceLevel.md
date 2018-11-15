@@ -35,6 +35,20 @@ __eol__: (in) (GDate) The date that this service level goes end-of-life.
 (void)
 
 ---
+### set_eol_ymd()
+#### Arguments:
+__self__: (in) ([Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)) This [Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)
+
+__year__: (in) (int) The year that this service goes end-of-life.
+
+__month__: (in) (int) The month that this service goes end-of-life.
+
+__day__: (in) (int) The day that this service goes end-of-life.
+
+#### Returns:
+(void)
+
+---
 ### remove_eol()
 Remove the EOL from this Service Level.
 
@@ -51,3 +65,11 @@ __self__: (in) ([Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)) This [Modulem
 
 #### Returns:
 (GDate) (transfer none) The date this service level goes end of life.
+
+---
+### get_eol_as_string()
+#### Arguments:
+__self__: (in) ([Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)) This [Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)
+
+#### Returns:
+(string) (transfer full) The date this service level goes end of life as a string of the form 'YYYY-MM-DD'
