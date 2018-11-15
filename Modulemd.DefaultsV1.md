@@ -35,16 +35,6 @@ __error__: (out) (GError) A GError containing the reason the object failed to up
 (bool) TRUE if the upgrade succeeded. If the upgrade could not complete, returns FALSE and sets `error` appropriately.
 
 ---
-### get_version()
-Gets the numeric version associated with this object. This will never be modified after object construction.
-
-#### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
-#### Returns:
-(uint64) The metadata version represented by this [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
----
 ### set_module_name()
 Sets the module name. This should normally be done during object creation and remain unchanged. This object will fail validation if `module_name` is unset.
 
