@@ -5,7 +5,7 @@ The data to represent a stream of a module as described by a modulemd YAML docum
 
 __arch__: (rw) (string) Module Artifact Architecture
 
-__buildopts__: (rw) ([Modulemd.BuildOpts](Modulemd.BuildOpts.md)) Build options for the module.
+__buildopts__: (rw) ([Modulemd.Buildopts](Modulemd.Buildopts.md)) Build options for the module.
 
 __community__: (rw) (string) Link to the upstream community for this module.
 
@@ -64,7 +64,7 @@ __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Mod
 #### Arguments:
 __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
 
-__buildopts__: (in) ([Modulemd.Buildopts](Modulemd.Buildopts)) Build options for this module.
+__buildopts__: (in) ([Modulemd.Buildopts](Modulemd.Buildopts.md)) Build options for this module.
 
 #### Returns:
 (void)
@@ -74,7 +74,7 @@ __buildopts__: (in) ([Modulemd.Buildopts](Modulemd.Buildopts)) Build options for
 __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
 
 ####:
-([Modulemd.Buildopts](Modulemd.buildopts.md)) (transfer none) The build options for this module.
+([Modulemd.Buildopts](Modulemd.Buildopts.md)) (transfer none) The build options for this module.
 
 ---
 ### set_community()
