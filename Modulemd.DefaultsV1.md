@@ -20,21 +20,6 @@ __module_name__: (in) (string) The name of the module to which these defaults ap
 ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) (transfer full) A newly-allocated Modulemd.DefaultsV1 object.
 
 ---
-### upgrade()
-Upgrade this version of the defaults metadata to a newer version.
-
-#### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
-__target_version__: (in) (uint64) The version to upgrade to. Must be higher than the current version.
-
-__error__: (out) (GError) A GError containing the reason the object failed to upgrade, NULL if the upgrade succeeded.
-
-
-#### Returns:
-(bool) TRUE if the upgrade succeeded. If the upgrade could not complete, returns FALSE and sets `error` appropriately.
-
----
 ### set_module_name()
 Sets the module name. This should normally be done during object creation and remain unchanged. This object will fail validation if `module_name` is unset.
 
