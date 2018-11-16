@@ -22,7 +22,7 @@ __module_name__: (in) (string) The name of the module to which these defaults ap
 ---
 ### set_default_stream()
 #### Arguments
-__self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md) object.
+__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
 
 __default_stream: (in) (string) The name of the default stream for this module.
 
@@ -32,7 +32,7 @@ __default_stream: (in) (string) The name of the default stream for this module.
 ---
 ### get_default_stream()
 #### Arguments
-__self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md) object.
+__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
 
 #### Returns:
 (string) (transfer none) The name of the default stream for this module.
@@ -42,7 +42,7 @@ __self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulem
 Gets a list of streams that have had default profiles set for this module.
 
 #### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md) object.
+__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
 
 #### Returns:
 (strv) (transfer full) A sorted list of unique stream names for which default profiles have been assigned.
@@ -54,7 +54,7 @@ Add a profile that will be installed for this stream if none are explicitly spec
 This function may be called any number of times for the same stream and will deduplicate input.
 
 #### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md) object.
+__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
 
 __stream__: (in) (string): The name of the module stream to which to add this default profile.
 
@@ -68,7 +68,7 @@ __profile__: (in) (string): The name of the default profile to add.
 Remove all default profiles for the specified stream.
 
 #### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md) object.
+__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
 
 #### Returns:
 (void)
@@ -78,7 +78,7 @@ __self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulem
 Returns a sorted, deduplicated list of the default profiles for the specified stream.
 
 #### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md) object.
+__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
 
 __stream__: (in) (string) The name of the string to retrieve default profiles for.
 
