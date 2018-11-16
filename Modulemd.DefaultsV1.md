@@ -20,26 +20,6 @@ __module_name__: (in) (string) The name of the module to which these defaults ap
 ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) (transfer full) A newly-allocated Modulemd.DefaultsV1 object.
 
 ---
-### set_module_name()
-Sets the module name. This should normally be done during object creation and remain unchanged. This object will fail validation if `module_name` is unset.
-
-#### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
-__module_name__: (in) (string) The name of the module to which these defaults apply.
-
-#### Returns:
-(void)
-
----
-### get_module_name()
-#### Arguments:
-__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
-
-#### Returns:
-(string) (transfer none) The name of the module to which these defaults apply.
-
----
 ### set_default_stream()
 #### Arguments
 __self__: (in) ([Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md)) This [Modulemd.DefaultsV1V1](Modulemd.DefaultsV1V1.md) object.
