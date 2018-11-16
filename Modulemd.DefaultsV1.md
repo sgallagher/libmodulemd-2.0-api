@@ -64,7 +64,7 @@ __profile__: (in) (string): The name of the default profile to add.
 (void)
 
 ---
-### remove_default_profiles_for_stream()
+### clear_default_profiles_for_stream()
 Remove all default profiles for the specified stream.
 
 #### Arguments:
