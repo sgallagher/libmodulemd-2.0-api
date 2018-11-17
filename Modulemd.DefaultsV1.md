@@ -64,14 +64,30 @@ __profile__: (in) (string): The name of the default profile to add.
 (void)
 
 ---
-### clear_default_profiles_for_stream()
-Remove all default profiles for the specified stream.
+### set_empty_default_profiles_for_stream()
+Sets the default profiles for @stream_name to the empty set. When output to a file, it will appear as `stream_name: []`.
 
 #### Arguments:
 __self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
 
+__stream_name__: (in) (string): The name of the module stream to which to add this default profile.
+
 #### Returns:
 (void)
+
+
+---
+### remove_default_profiles_for_stream()
+Removes this stream from the list of profiles entirely. It will not appear in the output document.
+
+#### Arguments:
+__self__: (in) ([Modulemd.DefaultsV1](Modulemd.DefaultsV1.md)) This [Modulemd.DefaultsV1](Modulemd.DefaultsV1.md) object.
+
+__stream_name__: (in) (string): The name of the module stream to which to add this default profile.
+
+#### Returns:
+(void)
+
 
 ---
 ### get_default_profiles_for_stream_as_strv()
