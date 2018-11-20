@@ -46,28 +46,6 @@ __error__: (out) (GError) If the object is not valid, it will return the reason.
 (bool) TRUE if validation passed.
 
 ---
-### dump()
-#### Arguments:
-__self__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) This [Modulemd.Translation](Modulemd.Translation.md) object.
-
-__yaml_file__: (in) (string) Path to the output file to contain a YAML representation of this object.
-
-__error__: (out) (GError) If the YAML could not be written to disk, contains the reason.
-
-#### Returns:
-(bool) Whether the YAML was written successfully.
-
----
-### dumps()
-#### Arguments:
-__self__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) This [Modulemd.Translation](Modulemd.Translation.md) object.
-
-__error__: (out) (GError) If the YAML could not be written to disk, contains the reason.
-
-#### Returns:
-(string) (transfer_full) A YAML string representing this object.
-
----
 ### set_modified()
 #### Arguments:
 __self__: (in) ([Modulemd.Translation](Modulemd.Translation.md)) This [Modulemd.Translation](Modulemd.Translation.md) object.
