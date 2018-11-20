@@ -1,4 +1,4 @@
-# Modulemd.ComponentBase (GObject)
+# Modulemd.Component (GObject)
 Pure virtual parent class for components that go into a module stream.
 
 Derived Objects:
@@ -18,19 +18,19 @@ __rationale__: (rw) (string) A description of the reason this component is part 
 ---
 ### copy()
 #### Arguments:
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
 #### Returns:
-([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) (transfer full) A shallow copy of this component.
+([Modulemd.Component](Modulemd.Component.md)) (transfer full) A shallow copy of this component.
 
 ---
 ### update()
 Updates this component to be a shallow copy of `src`.
 
 #### Arguments:
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
-__src__: (in) ([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) The object to copy from.
+__src__: (in) ([Modulemd.Component](Modulemd.Component.md)) The object to copy from.
 
 #### Returns:
 (void)
@@ -38,7 +38,7 @@ __src__: (in) ([Modulemd.ComponentBase](Modulemd.ComponentBase.md)) The object t
 ---
 ### set_buildorder()
 #### Arguments:
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
 __buildorder__: (in) (int64) The order this component should be built relative to others.
 
@@ -48,7 +48,7 @@ __buildorder__: (in) (int64) The order this component should be built relative t
 ---
 ### get_buildorder()
 #### Arguments:
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
 #### Returns:
 (int64) The value of the buildorder
@@ -56,7 +56,7 @@ __self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
 ---
 ### set_name()
 #### Arguments:
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
 __name__: (in) (string) The name of the component.
 
@@ -66,7 +66,7 @@ __name__: (in) (string) The name of the component.
 ---
 ### get_name()
 #### Arguments:
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
 #### Returns:
 (string) (transfer none) The name of the component.
@@ -74,7 +74,7 @@ __self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
 ---
 ### set_rationale()
 #### Arguments:
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
 __rationale__: (in) (string) The reason that this component is part of the stream.
 
@@ -83,7 +83,12 @@ __rationale__: (in) (string) The reason that this component is part of the strea
 
 ---
 ### get_rationale()
-__self__: (in) This [Modulemd.ComponentBase](Modulemd.ComponentBase.md) object.
+__self__: (in) This [Modulemd.Component](Modulemd.Component.md) object.
 
 #### Returns:
 (string) (transfer none) The rationale.
+Viewport
+Window
+×
+×
+×
