@@ -1,4 +1,4 @@
-# Modulemd.ComponentRpm ([Modulemd.ComponentBase](Modulemd.ComponentBase.md))
+# Modulemd.ComponentRpm ([Modulemd.Component](Modulemd.Component.md))
 An RPM component that goes into a module stream.
 
 ## Properties
