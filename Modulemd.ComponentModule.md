@@ -1,4 +1,4 @@
-# Modulemd.ComponentModule ([Modulemd.ComponentBase](Modulemd.ComponentBase.md))
+# Modulemd.ComponentModule ([Modulemd.Component](Modulemd.Component.md))
 A module component that goes into a module stream.
 
 ## Properties
