@@ -74,4 +74,13 @@ __self__: (in) ([Modulemd.ModuleStream](Modulemd.ModuleStream.md)) This [Modulem
 __self__: (in) ([Modulemd.ModuleStream](Modulemd.ModuleStream.md)) This [Modulemd.ModuleStream](Modulemd.ModuleStream.md) object.
 
 #### Returns:
-(string) (transfer none) The metadata version of this [Modulemd.ModuleStream](Modulemd.ModuleStream.md) object.
+(uint64) (transfer none) The metadata version of this [Modulemd.ModuleStream](Modulemd.ModuleStream.md) object.
+
+---
+### get_stream_name()
+
+#### Arguments
+__self__: (in) ([Modulemd.ModuleStream](Modulemd.ModuleStream.md)) This [Modulemd.ModuleStream](Modulemd.ModuleStream.md) object.
+
+#### Returns:
+(string) (transfer none) The name of the module stream.
