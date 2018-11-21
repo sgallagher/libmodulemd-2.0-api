@@ -292,14 +292,6 @@ __self__: (in) ([Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md)) This [Mod
 (strv) (transfer full) An ordered list of licenses under which this module stream is released.
 
 ---
-### get_module_name()
-#### Arguments:
-__self__: (in) ([Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md)) This [Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md) object.
-
-#### Returns:
-(string) (transfer none) The name of the module to which this stream belongs.
-
----
 ### get_nsvc_as_string()
 #### Arguments:
 __self__: (in) ([Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md)) This [Modulemd.ModuleStreamV1](Modulemd.ModuleStreamV1.md) object.
