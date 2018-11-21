@@ -15,10 +15,6 @@ __description__: (rw) (string) The untranslated description of this module.
 
 __documentation__: (rw) (string) Link to the upstream documentation for this module.
 
-__name__: (ro) (string) The name of the module to which this stream applies. Set at object construction and immutable thereafter.
-
-__stream__: (ro) (string) The stream name. Set at object construction and immutable thereafter.
-
 __summary__: (rw) (string) The untranslated summary of this module.
 
 __tracker__: (rw) (string) Link to the upstream bug tracker for this module.
@@ -264,14 +260,6 @@ __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Mod
 (strv) (transfer full) An ordered list of licenses under which this module stream is released.
 
 ---
-### get_module_name()
-#### Arguments:
-__self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
-
-#### Returns:
-(string) (transfer none) The name of the module to which this stream belongs.
-
----
 ### get_nsvc_as_string()
 #### Arguments:
 __self__: (in) ([Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md)) This [Modulemd.ModuleStreamV2](Modulemd.ModuleStreamV2.md) object.
@@ -467,12 +455,6 @@ __servicelevel_name__: (in) (string) The name of the servicelevel to retrieve.
 
 #### Returns:
 ([Modulemd.ServiceLevel](Modulemd.ServiceLevel.md)) (transfer none) The requested service level if it is present. NULL if unknown.
-
----
-### get_stream()
-#### Arguments:
-#### Returns:
-(string) (transfer none) The name of this module stream.
 
 ---
 ### set_summary()
